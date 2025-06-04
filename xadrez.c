@@ -2,7 +2,7 @@
 
 int main(){
 
-    int torre = 1, bispo = 1, rainha =1;
+    int torre = 1, bispo = 1, rainha = 1, cavalo = 1;
 
     //TRABALHANDO A MOVIMENTAÇÃO DAS PEÇAS
 
@@ -12,7 +12,7 @@ int main(){
         printf("\nMovimento %d casa(s) para a direita.\n", torre);
         torre++;
     }
-    printf("Movimento da Torre realizado.\n");
+        printf("Movimento da Torre realizado.\n");
 
     do
     {
@@ -24,13 +24,25 @@ int main(){
 
         for (rainha = 1; rainha <= 8; rainha++)
         {
-            printf("\n====== Movimento da Rainha ======\n");
-            printf("\nMovimento %d casa(s) para a esquerda.\n", rainha);
+        printf("\n====== Movimento da Rainha ======\n");
+        printf("\nMovimento %d casa(s) para a esquerda.\n", rainha);
             rainha++;
         }
         printf("Movimento da rainha realizado.\n");
+
+        while (cavalo--)
+        {
+            printf("\n====== Movimento do cavalo ======\n");
+
+            for (int i = 0; i < 2; i++)
+            {
+        printf("Cima\n"); //imprime "Cima" duas vezes.
+            }
+        printf("Direita\n"); //imprime "Direita" uma vez.       
+            
+        }
+        printf("Movimentação do cavalo realizado.\n");
         
-    
-    
+
     return 0;
 }
